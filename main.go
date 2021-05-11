@@ -1,9 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"github.com/marianodsr/exo-orders/router"
+	"github.com/marianodsr/exo-orders/storage"
+)
 
 func main() {
+	storage.InitDB()
 
-	fmt.Println("Hello world2!")
+	router.HandleRoutes()
 
 }
